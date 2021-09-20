@@ -11,9 +11,7 @@
     
     margin: 10px auto;
     width: 80%;
-    /* regole di debug */
-     background-color: rgb(3, 127, 243);
-
+    
 
 }
 
@@ -21,34 +19,35 @@
     content: "";
     display: table;
     clear: both;
+    
 }
 
 /* contenitore */
 
-/* prima fila */
+
+
+/* immagini  */
+
+
 .laterale {
     float: left;
     width: 32%;
-    margin: 10px 0.5%;
-    
-    /* regole debug */
-    /* background-color: red; */
-    /* height: 200px; */
+    margin: 10px 0.5% ;
+
 }
 
 .laterale img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    position: relative;
 }
 
 #centrale {
     float: left;
     width: 32%;
     margin: 10px 1%;
-    /* regole debug */
-    /* background-color: red; */
-    /* height: 50px; */
+
 }
 
 #centrale img {
@@ -56,3 +55,50 @@
     height: 100%;
     object-fit: cover;
 }
+
+/* cuore */
+.cuore1 {
+    padding: 3px;
+    background-color: white;
+    position: absolute;
+    top: 50px; 
+    text-align: right;
+
+}
+
+.cuore2 {
+    padding: 3px;
+    background-color: white;
+    position: absolute;
+    top: 845px; 
+
+}
+
+/* discount */
+.discount1 {
+    padding: 3px;
+    color: white;
+    background-color: red;
+    position: absolute;
+    top: 650px;
+} 
+
+.discount2 {
+    padding: 3px;
+    color: white;
+    background-color: red;
+    position: absolute;
+    top: 1450px;
+} 
+
+
+/* descrizioni e prezzo */
+.newprice {
+    color: red;
+}
+
+.oldprice {
+    text-decoration: line-through;
+    color: black;
+}
+
