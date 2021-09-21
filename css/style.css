@@ -28,11 +28,53 @@
 
 /* immagini  */
 
+.laterale .first-image {
+    display: block;
+}
+
+.laterale .second-image {
+    display: none;
+}
+
+.laterale:hover .first-image {
+    display: none;
+}
+
+.laterale:hover .second-image {
+    display: block;
+}
+
+.laterale img {
+    width: 100%;
+}
+
+#centrale .first-image {
+    display: block;
+}
+
+#centrale .second-image {
+    display: none;
+}
+
+#centrale:hover .first-image {
+    display: none;
+}
+
+#centrale:hover .second-image {
+    display: block;
+}
+
+#centrale img {
+    width: 100%;
+}
+
+
 
 .laterale {
     float: left;
     width: 32%;
     margin: 10px 0.5% ;
+    position: relative;
 
 }
 
@@ -47,6 +89,7 @@
     float: left;
     width: 32%;
     margin: 10px 1%;
+    position: relative;
 
 }
 
@@ -58,11 +101,11 @@
 
 /* cuore */
 .cuore1 {
-    padding: 3px;
+    padding: 3px 15px;
     background-color: white;
     position: absolute;
-    top: 50px; 
-    text-align: right;
+    top: 50px;
+    right: 0; 
 
 }
 
@@ -75,12 +118,23 @@
 }
 
 /* discount */
-.discount1 {
-    padding: 3px;
-    color: white;
-    background-color: red;
+.promo {
     position: absolute;
+    left: 0;
     top: 650px;
+}
+.tag {
+    background-color: #00875a;
+}
+
+.promo span {
+    display: inline-block;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+}
+.discount1 {   
+    background-color: red;
 } 
 
 .discount2 {
